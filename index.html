@@ -156,6 +156,18 @@
   .sw.ochre{background:var(--ochre);}
 
   .card-note{font-size:13px; color:var(--body); margin-top:30px; max-width:74ch; line-height:1.9;}
+
+  .tuning-list{display:flex; flex-direction:column; gap:22px; max-width:640px; margin:0 auto;}
+  .tuning-step{display:flex; gap:18px; align-items:flex-start; text-align:left;}
+  .tuning-step .ts-num{
+    flex-shrink:0; width:34px; height:34px; border-radius:50%;
+    border:1.4px solid var(--teal); color:var(--teal);
+    font-family:var(--font-mono); font-size:13px; font-weight:600;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .tuning-step .ts-body{padding-top:3px;}
+  .tuning-step .ts-title{font-family:var(--font-display); font-weight:600; font-size:15.5px; color:var(--ink); margin-bottom:6px;}
+  .tuning-step .ts-desc{font-size:13px; color:var(--body); line-height:1.85;}
   .card-note strong{color:var(--rose); font-weight:700;}
 
   /* ===== 調座・調息・調心と重心（三角図） ===== */
@@ -378,7 +390,7 @@
         <span><i class="sw rose"></i>重要度・高</span>
       </div>
 
-      <p class="card-note">元の6レンズのアイコンモチーフ（視座＝二重円、縁起＝五角形ネットワーク、像＝フラクタル放射、距離＝円と中心点、陰陽＝太極図、循環＝点のある円）に合わせて、本日の壁打ちから重ねたスコアです。赤枠の<strong>01 視座・03 像・05 陰陽・06 循環</strong>が最も傾いており、無地の<strong>02 縁起・04 距離</strong>は中程度の傾きです。他者側の知覚（相手の重心・崩れを検知する力）は精密に機能する一方、自分を主語にした受け取り（誘いに乗る・頼る・休む）には生理的な警報が働いて動けなくなる——この非対称が01視座を赤枠へ押し上げています。表に立つ役割（講師・経営・デザイン・保育）を担う分、崩れや傾きが人目に触れることそのものへの抵抗が、03像の固着に重なっています。</p>
+      <p class="card-note">赤枠の<strong>01 視座・03 像・05 陰陽・06 循環</strong>が最も傾いており、無地の<strong>02 縁起・04 距離</strong>は中程度の傾きです。他者側の知覚（相手の重心・崩れを検知する力）は精密に機能する一方、自分を主語にした受け取り（誘いに乗る・頼る・休む）には生理的な警報が働いて動けなくなる——この非対称が01視座を赤枠へ押し上げています。表に立つ役割（講師・経営・デザイン・保育）を担う分、崩れや傾きが人目に触れることそのものへの抵抗が、03像の固着に重なっています。</p>
     </div>
 
     <!-- ===== 16 patterns ===== -->
@@ -742,6 +754,42 @@
       <div class="divider">案内人のフラ</div>
       <div class="fura-figure">
         <img class="zoomable" src="fura-jump.jpg" alt="案内人のフラ">
+      </div>
+    </div>
+
+    <!-- ===== tuning ===== -->
+    <div class="score-card">
+      <div class="divider">tuning</div>
+
+      <div class="tuning-list">
+        <div class="tuning-step">
+          <div class="ts-num">01</div>
+          <div class="ts-body">
+            <div class="ts-title">小さな「受け取り」から慣らす</div>
+            <div class="ts-desc">頼られる／相談されるような大きな受け取りではなく、「今日は何もしない」「誘いにただ乗る」くらいの、失敗しても崩れない小さな受け取り体験を意図的に積む。</div>
+          </div>
+        </div>
+        <div class="tuning-step">
+          <div class="ts-num">02</div>
+          <div class="ts-body">
+            <div class="ts-title">「頼れる親でいない自分」でも関係が切れないことを実測する</div>
+            <div class="ts-desc">頭の中の予測（頼れないと見放される）と実際の結果（頼らなくても関係は続く）のギャップを、小さい場面で繰り返し体感する。</div>
+          </div>
+        </div>
+        <div class="tuning-step">
+          <div class="ts-num">03</div>
+          <div class="ts-body">
+            <div class="ts-title">信念そのものに気づく</div>
+            <div class="ts-desc">「頼れる親でいなければ」がいつ働いているかを、その場で名指しできるようになるだけで、トリガーが引かれた瞬間に選択の余地が生まれる。</div>
+          </div>
+        </div>
+        <div class="tuning-step">
+          <div class="ts-num">04</div>
+          <div class="ts-body">
+            <div class="ts-title">土台（安全欲求）を動かす</div>
+            <div class="ts-desc">安全な人間関係の中で「何もしなくても安全」を繰り返し確認できる環境が、force駆動からの土台の格上げに直結する。</div>
+          </div>
+        </div>
       </div>
     </div>
 
